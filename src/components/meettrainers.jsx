@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-// 🔥 Import Trainer Images
+// Trainer Images
 import sam from "../assets/trainers/josh.png";
 import michael from "../assets/trainers/josh.png";
 import john from "../assets/trainers/josh.png";
@@ -15,15 +15,15 @@ export default function MeetOurTrainers() {
   ];
 
   return (
-    <div className="w-full bg-[#0d0d0d] text-white py-20">
+    <div className="w-full bg-transparent text-white py-20">
       <div className="max-w-6xl mx-auto px-4">
 
         {/* Title */}
         <h2 className="text-4xl font-bold">
-          Meet Our <span className="text-red-500">Trainers</span>
+          Meet Our <span className="text-[#005BBB]">Trainers</span>
         </h2>
 
-        <p className="text-gray-300 mt-3">
+        <p className="text-gray-200 mt-3">
           At This Part You Can See Few Of The Many Positive Reviews Of Our Customers.
         </p>
 
@@ -33,7 +33,9 @@ export default function MeetOurTrainers() {
           {trainers.map((trainer, index) => (
             <div
               key={index}
-              className="rounded-xl bg-black/40 backdrop-blur-md border border-red-500/30 hover:border-red-500 transition shadow-lg hover:shadow-red-600/40 overflow-hidden"
+              className="rounded-xl bg-black/40 backdrop-blur-md 
+              border border-[#005BBB]/40 hover:border-[#005BBB] 
+              transition shadow-lg hover:shadow-[#005BBB]/40 overflow-hidden"
             >
               {/* Trainer Image */}
               <img
@@ -47,7 +49,7 @@ export default function MeetOurTrainers() {
                 <h3 className="text-xl font-semibold">{trainer.name}</h3>
                 <p className="text-sm text-gray-400">{trainer.role}</p>
 
-                <button className="mt-3 text-red-400 text-sm underline hover:text-red-300">
+                <button className="mt-3 text-[#58B8FF] text-sm underline hover:text-[#AEE3FF]">
                   Learn More →
                 </button>
               </div>
@@ -58,7 +60,8 @@ export default function MeetOurTrainers() {
 
         {/* VIEW ALL Button */}
         <div className="flex justify-center mt-12">
-          <button className="px-6 py-2 border border-orange-500 text-orange-400 rounded-full hover:bg-orange-500 hover:text-black transition">
+          <button className="px-6 py-2 border border-[#58B8FF] text-[#58B8FF] 
+          rounded-full hover:bg-[#58B8FF] hover:text-black transition">
             View All →
           </button>
         </div>
@@ -68,7 +71,7 @@ export default function MeetOurTrainers() {
           <button className="p-3 bg-black border border-gray-600 rounded-full hover:border-white transition">
             ←
           </button>
-          <button className="p-3 bg-red-500 rounded-full hover:bg-red-600 transition">
+          <button className="p-3 bg-[#005BBB] rounded-full hover:bg-[#004C99] transition">
             →
           </button>
         </div>

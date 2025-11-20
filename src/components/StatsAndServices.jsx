@@ -40,14 +40,14 @@ export default function StatsAndServices() {
   ];
 
   return (
-    <section className="bg-gradient-to-r from-[#0e0d0d] via-[#111] to-[#1a0f0f] text-white py-20 px-6 md:px-16 lg:px-24">
+    <section className="bg-transparent text-white py-20 px-6 md:px-16 lg:px-24">
       {/* Stats Section */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10 text-center border-b border-gray-700 pb-12">
         {stats.map((s, index) => (
           <div key={index} className="relative">
-            <h2 className="text-3xl font-bold text-red-600">{s.value}</h2>
+            <h2 className="text-3xl font-bold text-white-600">{s.value}</h2>
             <p className="font-semibold mt-1">{s.label}</p>
-            <p className="text-gray-400 text-sm mt-2">{s.desc}</p>
+            <p className="text-whites-400 text-sm mt-2">{s.desc}</p>
             {index < stats.length - 1 && (
               <span className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 w-[2px] h-10 bg-red-700"></span>
             )}
@@ -58,9 +58,9 @@ export default function StatsAndServices() {
       {/* Services Header */}
       <div className="text-center my-16">
         <h3 className="text-2xl font-bold">
-          Our <span className="text-red-600">Services</span>
+          Our <span className="text-white-600">Services</span>
         </h3>
-        <p className="text-gray-400 mt-3 max-w-3xl mx-auto">
+        <p className="text-white-400 mt-3 max-w-3xl mx-auto">
           At This Part You Can Easily Access All Of Our Services. Take A Look At Them And Choose
           Which Ever You Want.
         </p>
@@ -83,9 +83,9 @@ export default function StatsAndServices() {
 
             {/* Content */}
             <div className="relative p-6 flex flex-col justify-end h-full">
-              <h4 className="text-xl font-extrabold text-red-600 mb-1">{service.title}</h4>
-              <p className="text-sm text-gray-300 mb-4">{service.subtitle}</p>
-              <p className="text-gray-400 text-sm leading-relaxed">{service.text}</p>
+              <h4 className="text-xl font-extrabold text-white-600 mb-1">{service.title}</h4>
+              <p className="text-sm text-white-300 mb-4">{service.subtitle}</p>
+              <p className="text-white-400 text-sm leading-relaxed">{service.text}</p>
 
               <button className="mt-5 text-white text-sm font-medium flex items-center gap-2 hover:text-red-500 transition">
                 Learn More <span className="text-red-600 text-lg">→</span>

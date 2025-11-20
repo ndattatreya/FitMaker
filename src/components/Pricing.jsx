@@ -4,22 +4,22 @@ export default function PricingSection() {
   const [billing, setBilling] = useState("monthly");
 
   return (
-    <div className="w-full py-16 bg-[#0c0c0c] text-white">
+    <div className="w-full py-16 text-white">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold">
-          Our <span className="text-red-500">Plans</span>
+          Our <span className="text-white-500">Plans</span>
         </h2>
-        <p className="text-gray-300 mt-3">
+        <p className="text-white-300 mt-3">
           Select The Plan That Suits Your Fitness Goals And Let Our Expert Coaches Guide You Every Step Of The Way.
         </p>
 
         {/* Toggle */}
         <div className="flex justify-center mt-6">
-          <div className="flex bg-black border border-red-500 rounded-full">
+          <div className="flex bg-black/50 border border-blue-500 rounded-full">
             <button
               onClick={() => setBilling("monthly")}
               className={`px-6 py-2 rounded-full transition ${
-                billing === "monthly" ? "bg-red-500" : "bg-transparent"
+                billing === "monthly" ? "bg-blue-500" : "bg-transparent"
               }`}
             >
               Monthly
@@ -27,7 +27,7 @@ export default function PricingSection() {
             <button
               onClick={() => setBilling("annually")}
               className={`px-6 py-2 rounded-full transition ${
-                billing === "annually" ? "bg-red-500" : "bg-transparent"
+                billing === "annually" ? "bg-blue-500" : "bg-transparent"
               }`}
             >
               Annually
@@ -37,7 +37,6 @@ export default function PricingSection() {
 
         {/* Pricing Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-          {/* PRO PLAN */}
           <PlanCard
             title="PRO PLAN"
             price={billing === "monthly" ? "99$" : "999$"}
@@ -52,7 +51,6 @@ export default function PricingSection() {
             ]}
           />
 
-          {/* CUSTOM PLAN */}
           <PlanCard
             title="CUSTOM PLAN"
             price={billing === "monthly" ? "149$" : "1499$"}
@@ -68,7 +66,6 @@ export default function PricingSection() {
             ]}
           />
 
-          {/* BEGINNER PLAN */}
           <PlanCard
             title="BEGINNER PLAN"
             price={billing === "monthly" ? "49$" : "499$"}
@@ -94,9 +91,9 @@ function PlanCard({ title, price, features, highlighted }) {
         highlighted ? "shadow-red-500/50 border-2" : ""
       }`}
     >
-      <p className="text-red-400 text-sm font-semibold">Package</p>
+      <p className="text-white-400 text-sm font-semibold">Package</p>
       <h3 className="text-3xl font-bold mt-1">{title}</h3>
-      <p className="text-gray-300 mt-3 text-sm leading-relaxed">
+      <p className="text-white-300 mt-3 text-sm leading-relaxed">
         {title === "PRO PLAN" &&
           "Our Pro Plan Offers Advanced Workouts And Personalized Nutrition Coaching To Help You Reach Your Goals Faster."}
         {title === "CUSTOM PLAN" &&
@@ -105,14 +102,15 @@ function PlanCard({ title, price, features, highlighted }) {
           "Start Your Fitness Journey With Basic Workouts And Essential Nutrition Guidance."}
       </p>
 
-      <h2 className="text-4xl font-bold mt-6">{price}
-        <span className="text-lg font-normal text-gray-400">/USDT</span>
+      <h2 className="text-4xl font-bold mt-6">
+        {price}
+        <span className="text-lg font-normal text-white-400">/USDT</span>
       </h2>
 
-      <ul className="mt-6 space-y-2 text-sm text-gray-300">
+      <ul className="mt-6 space-y-2 text-sm text-white-300">
         {features.map((f, index) => (
           <li key={index} className="flex items-start gap-2">
-            <span className="text-red-500">•</span> {f}
+            <span className="text-white-500">•</span> {f}
           </li>
         ))}
       </ul>

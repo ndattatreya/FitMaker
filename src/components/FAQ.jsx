@@ -31,13 +31,11 @@ export default function FAQSection() {
   };
 
   return (
-    <div className="w-full bg-[#0d0d0d] text-white py-20">
+    <div className="w-full bg-transparent text-white py-20">
       <div className="max-w-4xl mx-auto px-6">
 
-        {/* Title */}
         <h2 className="text-center text-4xl font-bold mb-10">FAQ</h2>
 
-        {/* FAQ List */}
         <div className="space-y-4">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
@@ -46,29 +44,27 @@ export default function FAQSection() {
               <div
                 key={index}
                 className={`border rounded-xl transition-all overflow-hidden ${
-                  isOpen ? "border-red-500" : "border-red-500/40"
+                  isOpen ? "border-[#005BBB]" : "border-[#005BBB]/50"
                 }`}
               >
-                {/* Question */}
+
                 <button
                   onClick={() => toggleFAQ(index)}
                   className="w-full flex justify-between items-center text-left px-6 py-5"
                 >
                   <span className="text-lg font-semibold">{faq.q}</span>
 
-                  {/* Arrow */}
                   <span
                     className={`text-xl transform transition-transform ${
-                      isOpen ? "rotate-180 text-red-500" : "rotate-0 text-gray-300"
+                      isOpen ? "rotate-180 text-[#005BBB]" : "rotate-0 text-gray-300"
                     }`}
                   >
                     ▼
                   </span>
                 </button>
 
-                {/* Answer */}
                 {isOpen && (
-                  <div className="px-6 pb-6 text-gray-300 text-sm leading-relaxed">
+                  <div className="px-6 pb-6 text-gray-200 text-sm leading-relaxed">
                     {faq.a}
                   </div>
                 )}

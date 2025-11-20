@@ -9,7 +9,7 @@ import FooterSection from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-black min-h-screen">
+    <div className="min-h-screen w-full">
       <Navbar />
       <HeroSection />
       <StatsAndServices />
