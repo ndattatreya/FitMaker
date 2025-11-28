@@ -20,8 +20,7 @@ export default function Navbar() {
       {/* Buttons */}
       <div className="flex space-x-3">
         <a
-          href="https://fitmaker-dashboard.vercel.app/"
-          target="_self"
+          href="https://cobios-dashboard.vercel.app/login"
           rel="noopener noreferrer"
         >
           <button className="
