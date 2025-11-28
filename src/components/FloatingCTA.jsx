@@ -9,7 +9,7 @@ export default function FloatingCTA() {
       {open && (
         <>
           <a
-            href="tel:+919876543210"
+            href="tel:8851643372"
             className="p-3 bg-blue-600 text-white rounded-full shadow-lg hover:scale-110 transition"
             title="Call"
           >
@@ -17,7 +17,7 @@ export default function FloatingCTA() {
           </a>
 
           <a
-            href="mailto:example@gmail.com"
+            href="mailto:cobios.labs@gmail.com"
             className="p-3 bg-gray-700 text-white rounded-full shadow-lg hover:scale-110 transition"
             title="Email"
           >
@@ -25,7 +25,17 @@ export default function FloatingCTA() {
           </a>
 
           <a
-            href="https://wa.me/919876543210"
+            href="https://www.instagram.com/cobios.official?igsh=NXo2Z3d3NW5pZTd2"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-pink-600 text-white rounded-full shadow-lg hover:scale-110 transition"
+            title="Instagram"
+          >
+            <Instagram size={22} />
+          </a>
+
+          <a
+            href="https://wa.me/8851643372"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 bg-green-600 text-white rounded-full shadow-lg hover:scale-110 transition"
@@ -35,7 +45,7 @@ export default function FloatingCTA() {
           </a>
 
           <a
-            href="https://linkedin.com/in/example"
+            href="https://www.linkedin.com/company/cobios-labs/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 bg-blue-800 text-white rounded-full shadow-lg hover:scale-110 transition"
