@@ -6,10 +6,11 @@ import ToolsAndTestimonials from "./components/ToolsandTestimonials";
 import MeetOurTrainers from "./components/meettrainers";
 import FAQSection from "./components/FAQ";
 import FooterSection from "./components/Footer";
+import FloatingCTA from "./components/FloatingCTA"; // ⬅ import this
 
 function App() {
   return (
-    <div className="min-h-screen w-full">
+    <div className="min-h-screen w-full relative">
       <Navbar />
       <HeroSection />
       <StatsAndServices />
@@ -18,6 +19,8 @@ function App() {
       <MeetOurTrainers />
       <FAQSection />
       <FooterSection />
+
+      <FloatingCTA /> 
     </div>
   );
 }
