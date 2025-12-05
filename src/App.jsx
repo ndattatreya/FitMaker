@@ -6,6 +6,7 @@ import ToolsAndTestimonials from "./components/ToolsandTestimonials";
 import MeetOurTrainers from "./components/meettrainers";
 import FAQSection from "./components/FAQ";
 import FooterSection from "./components/Footer";
+import FloatingCTA from "./components/FloatingCTA"; 
 import StaticCarousel from "./components/reviews";
 
 function App() {
