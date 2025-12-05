@@ -6,12 +6,14 @@ import ToolsAndTestimonials from "./components/ToolsandTestimonials";
 import MeetOurTrainers from "./components/meettrainers";
 import FAQSection from "./components/FAQ";
 import FooterSection from "./components/Footer";
+import StaticCarousel from "./components/reviews";
 
 function App() {
   return (
     <div className="min-h-screen w-full">
       <Navbar />
       <HeroSection />
+      <StaticCarousel />
       <StatsAndServices />
       <PricingSection />
       <ToolsAndTestimonials />
