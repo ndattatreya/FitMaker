@@ -10,7 +10,7 @@ import StaticCarousel from "./components/reviews";
 
 function App() {
   return (
-    <div className="min-h-screen w-full">
+    <div className="min-h-screen w-full relative">
       <Navbar />
       <HeroSection />
       <StaticCarousel />
@@ -20,6 +20,7 @@ function App() {
       <MeetOurTrainers />
       <FAQSection />
       <FooterSection />
+      <FloatingCTA /> 
     </div>
   );
 }
